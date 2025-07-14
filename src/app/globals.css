@@ -7,15 +7,23 @@
 
 :root {
   --white: #ffffff;
-  --foreground: #171717;
+  --black: #171717;
   --primary: #000080;
   --secondary: #ffd700;
-  --accent: #008080;
+  --accent: #005757;
 }
 
 @theme inline {
   --color-white: var(--white);
+  --color-foreground: var(--black);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+.smooth {
+  @apply transition-all ease-linear duration-300;
 }
