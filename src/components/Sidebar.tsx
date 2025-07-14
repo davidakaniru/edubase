@@ -9,7 +9,7 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className="h-screen w-16 hover:w-40 flex flex-col items-center hover:items-start bg-white shadow-sm smooth group"
+      className="h-screen w-16 hover:w-40 flex flex-col items-center hover:items-start hover:pr-2 bg-white shadow-sm smooth group"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
