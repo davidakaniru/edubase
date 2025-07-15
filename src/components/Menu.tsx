@@ -18,9 +18,9 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
               <Link
                 key={label}
                 href={href}
-                className="flex items-center justify-center group-hover:justify-start w-full gap-2 px-2 py-1 hover:bg-gray-300 rounded-r-full smooth hover:text-accent"
+                className="flex items-center justify-center group-hover:justify-start w-full gap-2 px-2 py-1 hover:bg-gray-300 rounded-r-full smooth hover:text-primary"
               >
-                <Icon size={20} className="text-accent" />
+                <Icon size={20} className="text-primary" />
                 {isOpen && (
                   <motion.span
                     initial={{ width: 0 }}
