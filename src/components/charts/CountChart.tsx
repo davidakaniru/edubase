@@ -1,12 +1,7 @@
 "use client";
 import { FaDotCircle } from "react-icons/fa";
 import { IoIosMore } from "react-icons/io";
-import {
-  RadialBarChart,
-  RadialBar,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
 
 const data = [
   {
@@ -28,7 +23,7 @@ const data = [
 
 const CountChart = () => {
   return (
-    <div className="w-full lg:w-1/3 h-[450px] bg-light rounded-2xl p-4 flex flex-col justify-center">
+    <div className="w-full lg:w-1/3 h-[450px] bg-light rounded-2xl p-4 flex flex-col">
       {/* TITLE */}
       <div className="flex items-center justify-between">
         <h1 className="font-semibold text-lg">Students</h1>
@@ -46,7 +41,6 @@ const CountChart = () => {
             data={data}
           >
             <RadialBar background dataKey="count" />
-            <Legend iconSize={10} layout="vertical" verticalAlign="middle" />
           </RadialBarChart>
         </ResponsiveContainer>
       </div>
