@@ -27,7 +27,7 @@ const Sidebar = () => {
           <motion.span
             initial={{ width: 0 }}
             animate={{ width: "fit-content" }}
-            transition={{ duration: 0.3, ease: "linear" }}
+            transition={{ duration: 0.2, ease: "linear" }}
             className="hidden group-hover:block overflow-hidden"
           >
             EduBase

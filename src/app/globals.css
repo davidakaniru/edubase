@@ -25,5 +25,5 @@
 }
 
 .smooth {
-  @apply transition-all ease-linear duration-300;
+  @apply transition-all ease-linear duration-200;
 }
