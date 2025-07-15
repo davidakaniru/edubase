@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* USER */}
         <div className="flex items-center justify-center gap-1.5">
           <div className="flex flex-col">
-            <span className="test-xs leading-3 font-medium">John Doe</span>
+            <span className="test-xs leading-3 font-medium">David Eze</span>
             <span className="text-[10px] text-gray-500 text-right">Admin</span>
           </div>
           <Image
