@@ -7,8 +7,8 @@ import {
   FaRegCommentDots,
 } from "react-icons/fa";
 import { FiSettings, FiLogOut } from "react-icons/fi";
-import { LuUser } from "react-icons/lu";
-import { MdEditNote, MdAssignment, MdCampaign } from "react-icons/md";
+import { GiBookshelf } from "react-icons/gi";
+import { MdEditNote, MdAssignment, MdCampaign, MdOutlineAssessment } from "react-icons/md";
 import { PiChalkboardTeacher, PiChalkboard, PiExam } from "react-icons/pi";
 
 export const menuItems = [
@@ -19,61 +19,86 @@ export const menuItems = [
         Icon: AiFillHome,
         label: "Home",
         href: "/",
+        visible: ["admin", "teacher", "student", "parent"],
       },
       {
         Icon: PiChalkboardTeacher,
         label: "Teachers",
-        href: "/teachers",
+        href: "/list/teachers",
+        visible: ["admin", "teacher"],
       },
       {
         Icon: FaUserGraduate,
         label: "Students",
-        href: "/students",
+        href: "/list/students",
+        visible: ["admin", "teacher"],
       },
       {
         Icon: FaUserFriends,
         label: "Parents",
-        href: "/parents",
+        href: "/list/parents",
+        visible: ["admin", "teacher"],
+      },
+      {
+        Icon: GiBookshelf,
+        label: "Subjects",
+        href: "/list/subjects",
+        visible: ["admin"],
       },
       {
         Icon: PiChalkboard,
         label: "Classes",
-        href: "/classes",
+        href: "/list/classes",
+        visible: ["admin", "teacher"],
       },
       {
         Icon: MdEditNote,
         label: "Lessons",
-        href: "/lessons",
+        href: "/list/lessons",
+        visible: ["admin", "teacher"],
+
       },
       {
         Icon: PiExam,
         label: "Exams",
-        href: "/exams",
+        href: "/list/exams",
+        visible: ["admin", "teacher", "student", "parent"],
       },
       {
         Icon: MdAssignment,
         label: "Assignment",
-        href: "/assignment",
+        href: "/list/assignment",
+        visible: ["admin", "teacher", "student", "parent"],
+      },
+      {
+        Icon: MdOutlineAssessment,
+        label: "Result",
+        href: "/list/result",
+        visible: ["admin", "teacher", "student", "parent"],
       },
       {
         Icon: FaClipboardCheck,
         label: "Attendance",
-        href: "/attendance",
+        href: "/list/attendance",
+        visible: ["admin", "teacher", "student", "parent"],
       },
       {
         Icon: FaRegCalendarAlt,
         label: "Events",
-        href: "/events",
+        href: "/list/events",
+        visible: ["admin", "teacher", "student", "parent"],
       },
       {
         Icon: FaRegCommentDots,
         label: "Messages",
-        href: "/messages",
+        href: "/list/messages",
+        visible: ["admin", "teacher", "student", "parent"],
       },
       {
         Icon: MdCampaign,
         label: "Announcement",
         href: "/announcement",
+        visible: ["admin", "teacher", "student", "parent"],
       },
     ],
   },
@@ -81,19 +106,16 @@ export const menuItems = [
     title: "OTHER",
     items: [
       {
-        Icon: LuUser,
-        label: "Profile",
-        href: "/profile",
-      },
-      {
         Icon: FiSettings,
         label: "Settings",
         href: "/settings",
+        visible: ["admin", "teacher", "student", "parent"],
       },
       {
         Icon: FiLogOut,
         label: "Logout",
         href: "/logout",
+        visible: ["admin", "teacher", "student", "parent"],
       },
     ],
   },

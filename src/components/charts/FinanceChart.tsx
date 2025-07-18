@@ -76,14 +76,14 @@ const data = [
 
 const FinanceChart = () => {
   return (
-    <div className="w-full h-[500px] bg-light rounded-2xl p-4">
+    <div className="w-full h-[500px] bg-light rounded-2xl p-4 flex flex-col justify-between">
       {/* TITLE */}
       <div className="flex items-center justify-between">
         <h1 className="font-semibold text-lg">Finance</h1>
         <IoIosMore size={20} />
       </div>
       {/* CHART */}
-      <div className="w-full h-8/10">
+      <div className="w-full h-9/10">
         <ResponsiveContainer>
           <LineChart
             width={500}

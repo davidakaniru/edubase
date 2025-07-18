@@ -34,3 +34,20 @@
 .smooth {
   @apply transition-all ease-linear duration-200;
 }
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+}
+
+.react-calendar__tile--active {
+  background: var(--primary) !important;
+}
+
+.react-calendar__navigation__label {
+  font-weight: 600 !important;
+}
+
+.react-calendar__tile--now {
+  background: var(--foreground) ;
+}
